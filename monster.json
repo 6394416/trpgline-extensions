@@ -2473,10 +2473,10 @@
                                     "rolls": [],
                                     "name": "Senses",
                                     "attributes": {
-                                        "": {
-                                            "name": "",
+                                        "黑暗視覺": {
+                                            "name": "黑暗視覺",
                                             "type": "text",
-                                            "value": "呎",
+                                            "value": "60呎",
                                             "readonly": true,
                                             "hasCustomName": false,
                                             "removable": true,
@@ -2485,13 +2485,7 @@
                                         }
                                     },
                                     "order": [
-                                        "",
-                                        "",
-                                        "",
-                                        "",
-                                        "",
-                                        "",
-                                        ""
+                                        "黑暗視覺"
                                     ]
                                 }
                             },

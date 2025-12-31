@@ -18,7 +18,8 @@
                         "AshZombie",
                         "IxitxachitlCleric",
                         "StoneGiant",
-                        "綠鬼婆"
+                        "綠鬼婆",
+                        "木乃伊領主"
                     ],
                     "entities": {
                         "Lich": {
@@ -2788,6 +2789,665 @@
                                 "attributes|weapons:weapons:爪抓",
                                 "attributes|weapons:weapons:幻象外貌",
                                 "attributes|weapons:weapons:隱形通行"
+                            ],
+                            "tags": []
+                        },
+                        "木乃伊領主": {
+                            "key": "木乃伊領主",
+                            "name": "木乃伊領主",
+                            "description": "",
+                            "categories": {
+                                "木乃伊領主": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "木乃伊領主",
+                                    "attributes": {
+                                        "魔法抗性": {
+                                            "name": "魔法抗性",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "木乃伊領主在對抗法術和其他魔法效果的豁免檢定中具有優勢。"
+                                        },
+                                        "復生": {
+                                            "name": "復生",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "若它的心臟仍完好無缺，則一個被摧毀的木乃伊領主將在24小時內獲得一具新的身體，回復它所有的生命值並再次復甦。這具新的身體將出現在距離木乃伊領主心臟5呎內的位置。"
+                                        }
+                                    },
+                                    "order": [
+                                        "魔法抗性",
+                                        "復生"
+                                    ]
+                                },
+                                "senses": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Senses",
+                                    "attributes": {
+                                        "黑暗視覺": {
+                                            "name": "黑暗視覺",
+                                            "type": "text",
+                                            "value": "60呎",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "黑暗視覺"
+                                    ]
+                                },
+                                "CondImmune": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Condition Immune",
+                                    "attributes": {
+                                        "charmed": {
+                                            "name": "charmed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "exhaustion": {
+                                            "name": "exhaustion",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "frightened": {
+                                            "name": "frightened",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "paralyzed": {
+                                            "name": "paralyzed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "poisoned": {
+                                            "name": "poisoned",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "charmed",
+                                        "exhaustion",
+                                        "frightened",
+                                        "paralyzed",
+                                        "poisoned"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "necrotic": {
+                                    "name": "necrotic",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "poison": {
+                                    "name": "poison",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "bludgeoning": {
+                                    "name": "bludgeoning",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "piercing": {
+                                    "name": "piercing",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "slashing": {
+                                    "name": "slashing",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "fire": {
+                                    "name": "fire",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "多重攻擊": {
+                                    "name": "多重攻擊",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "多重攻擊"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "木乃伊領主可以使用它的恐怖凝視，並進行一次腐壞之拳攻擊。"
+                                },
+                                "腐壞之拳": {
+                                    "name": "腐壞之拳",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "腐壞之拳"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "3d6 + 4+6d6 @鈍擊 @死靈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 命中9，觸及5呎，單一目標。on hit: 14 (3d6 + 4)鈍擊傷害加 21 (6d6)死靈傷害。若目標為一個生物，則它必須成功通過一次DC 16的體質豁免，否則受到木乃伊腐壞的詛咒。受到詛咒的目標無法回復生命值，且時間每流逝24小時，它的生命值最大值就會減少10 (3d6)點。若這個詛咒使目標的生命值最大值歸零，則目標死亡，且它的身體將化作塵土。這個詛咒會持續直到被移除詛咒法術或其他魔法效果解除。"
+                                },
+                                "恐怖凝視": {
+                                    "name": "恐怖凝視",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "恐怖凝視"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "木乃伊領主選擇一個距離它60呎內且它所能看見的生物做為目標。若該目標可以看見木乃伊領主，則它必須成功通過一次DC 16的睿知豁免對抗這個魔法，否則陷入恐懼直到木乃伊領主的下個回合結束。若此豁免檢定失敗且結果與目標值差距5點或更多，則它也將陷入麻痺狀態長達相同的持續時間。成功通過此豁免檢定的目標將在接下來的24小時內免疫於所有木乃伊和該木乃伊領主的恐怖瞪視。"
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 17
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 97
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 97
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 20
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 18
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 10
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 17
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 11
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 18
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "initiativeMod": {
+                                    "value": "0"
+                                },
+                                "history": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "religion": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "passivePerception": {
+                                    "value": 14
+                                },
+                                "level": {
+                                    "value": 15
+                                },
+                                "exp": {
+                                    "value": 13000
+                                },
+                                "spellAttack": {
+                                    "value": "9"
+                                },
+                                "spellcastingAbility": {
+                                    "value": "wis"
+                                },
+                                "spellModifier": {
+                                    "value": 18
+                                },
+                                "level1": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 4
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 4
+                                        }
+                                    ]
+                                },
+                                "level2": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level3": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level4": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level5": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 2
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 2
+                                        }
+                                    ]
+                                },
+                                "level6": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "order": [
+                                "categories|class:木乃伊領主",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|basicInfo:initiative:initiativeMod",
+                                "overrides|skills:intSkills:history",
+                                "overrides|skills:intSkills:religion",
+                                "categories|class:senses",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "attributes|basicInfo:resistances:necrotic",
+                                "attributes|basicInfo:resistances:poison",
+                                "attributes|basicInfo:resistances:bludgeoning",
+                                "attributes|basicInfo:resistances:piercing",
+                                "attributes|basicInfo:resistances:slashing",
+                                "attributes|basicInfo:resistances:fire",
+                                "categories|class:CondImmune",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "overrides|spellSlot:spellCasting:spellAttack",
+                                "overrides|spellSlot:spellCasting:spellcastingAbility",
+                                "overrides|spellSlot:spellCasting:spellModifier",
+                                "overrides|spellSlot:spellSlot:level1",
+                                "overrides|spellSlot:spellSlot:level2",
+                                "overrides|spellSlot:spellSlot:level3",
+                                "overrides|spellSlot:spellSlot:level4",
+                                "overrides|spellSlot:spellSlot:level5",
+                                "overrides|spellSlot:spellSlot:level6",
+                                "attributes|weapons:weapons:多重攻擊",
+                                "attributes|weapons:weapons:腐壞之拳",
+                                "attributes|weapons:weapons:恐怖凝視"
                             ],
                             "tags": []
                         }

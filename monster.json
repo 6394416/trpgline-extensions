@@ -1,0 +1,2409 @@
+{
+    "version": 0,
+    "system": "dnd5",
+    "extends": {
+        "ids": [
+            "monster"
+        ],
+        "entities": {
+            "monster": {
+                "id": "monster",
+                "name": "怪物",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "Lich",
+                        "SkeletalBloodfin",
+                        "LightningGolem",
+                        "AshZombie",
+                        "IxitxachitlCleric",
+                        "StoneGiant"
+                    ],
+                    "entities": {
+                        "Lich": {
+                            "key": "Lich",
+                            "name": "Lich",
+                            "description": "",
+                            "categories": {
+                                "Lich": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Lich",
+                                    "attributes": {
+                                        "truesight": {
+                                            "name": "truesight",
+                                            "type": "text",
+                                            "value": "120 ft.",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "cold": {
+                                            "name": "cold",
+                                            "type": "text",
+                                            "value": "resist",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "lightning": {
+                                            "name": "lightning",
+                                            "type": "text",
+                                            "value": "resist",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "necrotic": {
+                                            "name": "necrotic",
+                                            "type": "text",
+                                            "value": "resist",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "poison": {
+                                            "name": "poison",
+                                            "type": "text",
+                                            "value": "immune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "bludgeoningfromnonmagicalattacks": {
+                                            "name": "bludgeoning from nonmagical attacks",
+                                            "type": "text",
+                                            "value": "immune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "piercingfromnonmagicalattacks": {
+                                            "name": "piercing from nonmagical attacks",
+                                            "type": "text",
+                                            "value": "immune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "slashingfromnonmagicalattacks": {
+                                            "name": "slashing from nonmagical attacks",
+                                            "type": "text",
+                                            "value": "immune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "charmed": {
+                                            "name": "charmed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "exhaustion": {
+                                            "name": "exhaustion",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "frightened": {
+                                            "name": "frightened",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "paralyzed": {
+                                            "name": "paralyzed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "poisoned": {
+                                            "name": "poisoned",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "LegendaryResistance(3/Day)": {
+                                            "name": "Legendary Resistance (3/Day)",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "If the lich fails a saving throw, it can choose to succeed instead."
+                                        },
+                                        "Rejuvenation": {
+                                            "name": "Rejuvenation",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "If it has a phylactery, a destroyed lich gains a new body in {@dice 1d10} days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+                                        },
+                                        "TurnResistance": {
+                                            "name": "Turn Resistance",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "The lich has advantage on saving throws against any effect that turns undead."
+                                        }
+                                    },
+                                    "order": [
+                                        "truesight",
+                                        "cold",
+                                        "lightning",
+                                        "necrotic",
+                                        "poison",
+                                        "bludgeoningfromnonmagicalattacks",
+                                        "piercingfromnonmagicalattacks",
+                                        "slashingfromnonmagicalattacks",
+                                        "charmed",
+                                        "exhaustion",
+                                        "frightened",
+                                        "paralyzed",
+                                        "poisoned",
+                                        "LegendaryResistance(3/Day)",
+                                        "Rejuvenation",
+                                        "TurnResistance"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "ParalyzingTouch": {
+                                    "name": "ParalyzingTouch",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Paralyzing Touch"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "12"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "3d6 @cold"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "ms 12 to hit, reach 5 ft., one creature. on hit: 10 (3d6) cold damage. The target must succeed on a 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 17
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 135
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 135
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 30
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 11
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 20
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 14
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "arcana": {
+                                    "value": [
+                                        true,
+                                        true
+                                    ]
+                                },
+                                "history": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "insight": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "perception": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "passivePerception": {
+                                    "value": 19
+                                },
+                                "level": {
+                                    "value": 21
+                                },
+                                "exp": {
+                                    "value": 33000
+                                },
+                                "spellcastingDC": {
+                                    "value": "20"
+                                },
+                                "spellAttack": {
+                                    "value": "12"
+                                },
+                                "spellcastingAbility": {
+                                    "value": "int"
+                                },
+                                "spellModifier": {
+                                    "value": 20
+                                },
+                                "level1": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 4
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 4
+                                        }
+                                    ]
+                                },
+                                "level2": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level3": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level4": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level5": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level6": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        }
+                                    ]
+                                },
+                                "level7": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        }
+                                    ]
+                                },
+                                "level8": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        }
+                                    ]
+                                },
+                                "level9": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "order": [
+                                "categories|class:Lich",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|skills:intSkills:arcana",
+                                "overrides|skills:intSkills:history",
+                                "overrides|skills:wisSkills:insight",
+                                "overrides|skills:wisSkills:perception",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "overrides|spellSlot:spellCasting:spellcastingDC",
+                                "overrides|spellSlot:spellCasting:spellAttack",
+                                "overrides|spellSlot:spellCasting:spellcastingAbility",
+                                "overrides|spellSlot:spellCasting:spellModifier",
+                                "overrides|spellSlot:spellSlot:level1",
+                                "overrides|spellSlot:spellSlot:level2",
+                                "overrides|spellSlot:spellSlot:level3",
+                                "overrides|spellSlot:spellSlot:level4",
+                                "overrides|spellSlot:spellSlot:level5",
+                                "overrides|spellSlot:spellSlot:level6",
+                                "overrides|spellSlot:spellSlot:level7",
+                                "overrides|spellSlot:spellSlot:level8",
+                                "overrides|spellSlot:spellSlot:level9",
+                                "attributes|weapons:weapons:ParalyzingTouch"
+                            ],
+                            "tags": []
+                        },
+                        "SkeletalBloodfin": {
+                            "key": "SkeletalBloodfin",
+                            "name": "Skeletal Bloodfin",
+                            "description": "",
+                            "categories": {
+                                "SkeletalBloodfin": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Skeletal Bloodfin",
+                                    "attributes": {
+                                        "blindsight": {
+                                            "name": "blindsight",
+                                            "type": "text",
+                                            "value": "100 ft. (blind beyond this radius)",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "piercing": {
+                                            "name": "piercing",
+                                            "type": "text",
+                                            "value": "resist",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "slashing": {
+                                            "name": "slashing",
+                                            "type": "text",
+                                            "value": "resist",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "poison": {
+                                            "name": "poison",
+                                            "type": "text",
+                                            "value": "immune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "charmed": {
+                                            "name": "charmed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "deafened": {
+                                            "name": "deafened",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "frightened": {
+                                            "name": "frightened",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "paralyzed": {
+                                            "name": "paralyzed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "poisoned": {
+                                            "name": "poisoned",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "DeathBurst": {
+                                            "name": "Death Burst",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [
+                                                "3d6"
+                                            ],
+                                            "description": "When the bloodfin dies, it explodes in a cloud of toxic blood. Each creature in a 10-foot-radius sphere centered on the exploding bloodfin, including any creature swallowed by the bloodfin, must succeed on a {@dc 15} Constitution saving throw or take 10 ({@damage 3d6}) poison damage. A creature inside the bloodfin when it explodes falls {@condition prone} in the space formerly occupied by the bloodfin and is no longer {@condition blinded} or {@condition restrained} by it."
+                                        },
+                                        "UnusualNature": {
+                                            "name": "Unusual Nature",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "The skeletal bloodfin requires no food, drink, air, or sleep."
+                                        }
+                                    },
+                                    "order": [
+                                        "blindsight",
+                                        "piercing",
+                                        "slashing",
+                                        "poison",
+                                        "charmed",
+                                        "deafened",
+                                        "frightened",
+                                        "paralyzed",
+                                        "poisoned",
+                                        "DeathBurst",
+                                        "UnusualNature"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "swim": {
+                                    "name": "swim",
+                                    "type": "number",
+                                    "value": 50,
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "Multiattack": {
+                                    "name": "Multiattack",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Multiattack"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "The bloodfin makes one Bite attack and one Tail attack."
+                                },
+                                "Bite": {
+                                    "name": "Bite",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Bite"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2d8 + 5 @piercing"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 9 to hit (with advantage if the target is a creature missing any hit points), reach 5 ft., one target. on hit: 14 (2d8 + 5) piercing damage, and if the target is a creature, it is grappled (escape 15). Until this grapple ends, the target is restrained, and the bloodfin can't bite another target."
+                                },
+                                "Tail": {
+                                    "name": "Tail",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Tail"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "4d6 + 5 @bludgeoning"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 9 to hit (with advantage if the target is a creature missing any hit points), reach 10 ft., one target. on hit: 19 (4d6 + 5) bludgeoning damage."
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 16
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 93
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 93
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 5
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 20
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 14
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 2
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 10
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "perception": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "passivePerception": {
+                                    "value": 14
+                                },
+                                "level": {
+                                    "value": 9
+                                },
+                                "exp": {
+                                    "value": 5000
+                                }
+                            },
+                            "order": [
+                                "categories|class:SkeletalBloodfin",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "attributes|basicInfo:speed:swim",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|skills:wisSkills:perception",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "attributes|weapons:weapons:Multiattack",
+                                "attributes|weapons:weapons:Bite",
+                                "attributes|weapons:weapons:Tail"
+                            ],
+                            "tags": []
+                        },
+                        "LightningGolem": {
+                            "key": "LightningGolem",
+                            "name": "Lightning Golem",
+                            "description": "",
+                            "categories": {
+                                "LightningGolem": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Lightning Golem",
+                                    "attributes": {
+                                        "Berserk": {
+                                            "name": "Berserk",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [
+                                                "1d6"
+                                            ],
+                                            "description": "Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+                                        },
+                                        "ImmutableForm": {
+                                            "name": "Immutable Form",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "The golem is immune to any spell or effect that would alter its form."
+                                        },
+                                        "LightningAbsorption": {
+                                            "name": "Lightning Absorption",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+                                        },
+                                        "MagicResistance": {
+                                            "name": "Magic Resistance",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "The golem has advantage on saving throws against spells and other magical effects."
+                                        },
+                                        "MagicWeapons": {
+                                            "name": "Magic Weapons",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "The golem's weapon attacks are magical."
+                                        }
+                                    },
+                                    "order": [
+                                        "Berserk",
+                                        "ImmutableForm",
+                                        "LightningAbsorption",
+                                        "MagicResistance",
+                                        "MagicWeapons"
+                                    ]
+                                },
+                                "senses": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Lightning Golem",
+                                    "attributes": {
+                                        "darkvision": {
+                                            "name": "darkvision",
+                                            "type": "text",
+                                            "value": "60 ft.",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "darkvision"
+                                    ]
+                                },
+                                "CondImmune": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Lightning Golem",
+                                    "attributes": {
+                                        "charmed": {
+                                            "name": "charmed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "exhaustion": {
+                                            "name": "exhaustion",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "frightened": {
+                                            "name": "frightened",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "paralyzed": {
+                                            "name": "paralyzed",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "petrified": {
+                                            "name": "petrified",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        },
+                                        "poisoned": {
+                                            "name": "poisoned",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "charmed",
+                                        "exhaustion",
+                                        "frightened",
+                                        "paralyzed",
+                                        "petrified",
+                                        "poisoned"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "lightning": {
+                                    "name": "lightning",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "poison": {
+                                    "name": "poison",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "bludgeoningfromnonmagicalattacksthataren'tadamantine": {
+                                    "name": "bludgeoning from nonmagical attacks that aren't adamantine",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "piercingfromnonmagicalattacksthataren'tadamantine": {
+                                    "name": "piercing from nonmagical attacks that aren't adamantine",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "slashingfromnonmagicalattacksthataren'tadamantine": {
+                                    "name": "slashing from nonmagical attacks that aren't adamantine",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "Multiattack": {
+                                    "name": "Multiattack",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Multiattack"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "The golem makes two slam attacks."
+                                },
+                                "Slam": {
+                                    "name": "Slam",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Slam"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2d8 + 4 @lightning"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 7 to hit, reach 5 ft., one target. on hit: 13 (2d8 + 4) lightning damage."
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 9
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 93
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 93
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 30
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 19
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 9
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 18
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 6
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 10
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 5
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "passivePerception": {
+                                    "value": 10
+                                },
+                                "level": {
+                                    "value": 5
+                                },
+                                "exp": {
+                                    "value": 1800
+                                }
+                            },
+                            "order": [
+                                "categories|class:LightningGolem",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "categories|class:senses",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "attributes|basicInfo:resistances:lightning",
+                                "attributes|basicInfo:resistances:poison",
+                                "attributes|basicInfo:resistances:bludgeoningfromnonmagicalattacksthataren'tadamantine",
+                                "attributes|basicInfo:resistances:piercingfromnonmagicalattacksthataren'tadamantine",
+                                "attributes|basicInfo:resistances:slashingfromnonmagicalattacksthataren'tadamantine",
+                                "categories|class:CondImmune",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "attributes|weapons:weapons:Multiattack",
+                                "attributes|weapons:weapons:Slam"
+                            ],
+                            "tags": []
+                        },
+                        "AshZombie": {
+                            "key": "AshZombie",
+                            "name": "Ash Zombie",
+                            "description": "",
+                            "categories": {
+                                "AshZombie": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Ash Zombie",
+                                    "attributes": {
+                                        "UndeadFortitude": {
+                                            "name": "Undead Fortitude",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+                                        },
+                                        "AshPuff": {
+                                            "name": "Ash Puff",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "The first time the zombie takes damage, any living creature within 5 feet of the zombie must succeed on a DC 10 Constitution saving throw or gain disadvantage on attack rolls, saving throws, and ability checks for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on it early with a successful save."
+                                        }
+                                    },
+                                    "order": [
+                                        "UndeadFortitude",
+                                        "AshPuff"
+                                    ]
+                                },
+                                "senses": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Senses",
+                                    "attributes": {
+                                        "darkvision": {
+                                            "name": "darkvision",
+                                            "type": "text",
+                                            "value": "60 ft.",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "darkvision"
+                                    ]
+                                },
+                                "CondImmune": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Condition Immune",
+                                    "attributes": {
+                                        "poisoned": {
+                                            "name": "poisoned",
+                                            "type": "text",
+                                            "value": "conditionImmune",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "poisoned"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "poison": {
+                                    "name": "poison",
+                                    "type": "modifier",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": false
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "checkbox",
+                                            "value": true
+                                        }
+                                    ],
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "Slam": {
+                                    "name": "Slam",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Slam"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1d6 + 1 @bludgeoning"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 3 to hit, reach 5 ft., one target. on hit: 4 (1d6 + 1) bludgeoning damage."
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 8
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 22
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 22
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 20
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 13
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 6
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 6
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 5
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "initiativeMod": {
+                                    "value": "-2"
+                                },
+                                "passivePerception": {
+                                    "value": 8
+                                },
+                                "level": {
+                                    "value": 1
+                                },
+                                "exp": {
+                                    "value": 50
+                                }
+                            },
+                            "order": [
+                                "categories|class:AshZombie",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|basicInfo:initiative:initiativeMod",
+                                "categories|class:senses",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "attributes|basicInfo:resistances:poison",
+                                "categories|class:CondImmune",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "attributes|weapons:weapons:Slam"
+                            ],
+                            "tags": []
+                        },
+                        "IxitxachitlCleric": {
+                            "key": "IxitxachitlCleric",
+                            "name": "Ixitxachitl Cleric",
+                            "description": "",
+                            "categories": {
+                                "IxitxachitlCleric": {
+                                    "disabled": true,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Ixitxachitl Cleric",
+                                    "attributes": {},
+                                    "order": []
+                                },
+                                "senses": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Senses",
+                                    "attributes": {
+                                        "darkvision": {
+                                            "name": "darkvision",
+                                            "type": "text",
+                                            "value": "60 ft.",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "darkvision"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "swim": {
+                                    "name": "swim",
+                                    "type": "number",
+                                    "value": 30,
+                                    "readonly": true,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                },
+                                "Bite": {
+                                    "name": "Bite",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Bite"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1d6 + 1 @piercing"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 3 to hit, reach 5 ft., one target. on hit: 4 (1d6 + 1) piercing damage."
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 15
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 18
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 18
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 0
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 12
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 13
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 12
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 13
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 7
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "initiativeMod": {
+                                    "value": "3"
+                                },
+                                "passivePerception": {
+                                    "value": 11
+                                },
+                                "level": {
+                                    "value": 1
+                                },
+                                "exp": {
+                                    "value": 50
+                                },
+                                "spellcastingDC": {
+                                    "value": "11"
+                                },
+                                "spellAttack": {
+                                    "value": "3"
+                                },
+                                "spellcastingAbility": {
+                                    "value": "wis"
+                                },
+                                "spellModifier": {
+                                    "value": 13
+                                },
+                                "level1": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 4
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 4
+                                        }
+                                    ]
+                                },
+                                "level2": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 3
+                                        }
+                                    ]
+                                },
+                                "level3": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 2
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 2
+                                        }
+                                    ]
+                                }
+                            },
+                            "order": [
+                                "categories|class:IxitxachitlCleric",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "attributes|basicInfo:speed:swim",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|basicInfo:initiative:initiativeMod",
+                                "categories|class:senses",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "overrides|spellSlot:spellCasting:spellcastingDC",
+                                "overrides|spellSlot:spellCasting:spellAttack",
+                                "overrides|spellSlot:spellCasting:spellcastingAbility",
+                                "overrides|spellSlot:spellCasting:spellModifier",
+                                "overrides|spellSlot:spellSlot:level1",
+                                "overrides|spellSlot:spellSlot:level2",
+                                "overrides|spellSlot:spellSlot:level3",
+                                "attributes|weapons:weapons:Bite"
+                            ],
+                            "tags": []
+                        },
+                        "StoneGiant": {
+                            "key": "StoneGiant",
+                            "name": "Stone Giant",
+                            "description": "",
+                            "categories": {
+                                "StoneGiant": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Stone Giant",
+                                    "attributes": {
+                                        "StoneCamouflage": {
+                                            "name": "Stone Camouflage",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+                                        }
+                                    },
+                                    "order": [
+                                        "StoneCamouflage"
+                                    ]
+                                },
+                                "senses": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Senses",
+                                    "attributes": {
+                                        "darkvision": {
+                                            "name": "darkvision",
+                                            "type": "text",
+                                            "value": "60 ft.",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": false,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "darkvision"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "Multiattack": {
+                                    "name": "Multiattack",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Multiattack"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "The giant makes two greatclub attacks."
+                                },
+                                "Greatclub": {
+                                    "name": "Greatclub",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Greatclub"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "3d8 + 6 @bludgeoning"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 9 to hit, reach 15 ft., one target. on hit: 19 (3d8 + 6) bludgeoning damage."
+                                },
+                                "Rock": {
+                                    "name": "Rock",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "Rock"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "4d10 + 6 @bludgeoning"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "60"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "rw 9 to hit, range 60/240 ft., one target. on hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone."
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 17
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 126
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 126
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 40
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 23
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 15
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 20
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 10
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 12
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 9
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "initiativeMod": {
+                                    "value": "2"
+                                },
+                                "athletics": {
+                                    "value": [
+                                        true,
+                                        true
+                                    ]
+                                },
+                                "perception": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "passivePerception": {
+                                    "value": 14
+                                },
+                                "level": {
+                                    "value": 7
+                                },
+                                "exp": {
+                                    "value": 2900
+                                }
+                            },
+                            "order": [
+                                "categories|class:StoneGiant",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|basicInfo:initiative:initiativeMod",
+                                "overrides|skills:strSkills:athletics",
+                                "overrides|skills:wisSkills:perception",
+                                "categories|class:senses",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "attributes|weapons:weapons:Multiattack",
+                                "attributes|weapons:weapons:Greatclub",
+                                "attributes|weapons:weapons:Rock"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

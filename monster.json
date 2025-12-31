@@ -17,7 +17,8 @@
                         "LightningGolem",
                         "AshZombie",
                         "IxitxachitlCleric",
-                        "StoneGiant"
+                        "StoneGiant",
+                        "綠鬼婆"
                     ],
                     "entities": {
                         "Lich": {
@@ -2398,6 +2399,401 @@
                                 "attributes|weapons:weapons:Multiattack",
                                 "attributes|weapons:weapons:Greatclub",
                                 "attributes|weapons:weapons:Rock"
+                            ],
+                            "tags": []
+                        },
+                        "綠鬼婆": {
+                            "key": "綠鬼婆",
+                            "name": "綠鬼婆",
+                            "description": "",
+                            "categories": {
+                                "綠鬼婆": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "綠鬼婆",
+                                    "attributes": {
+                                        "兩棲": {
+                                            "name": "兩棲",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "鬼婆可以在空氣和水中呼吸。"
+                                        },
+                                        "擬聲": {
+                                            "name": "擬聲",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "鬼婆可以模仿動物和類人生物的聲音。一個聽到這類聲音的生物可以透過成功通過一次DC 14的睿知（察言觀色）檢定以辨別出該聲音是被模仿發出的。"
+                                        },
+                                        "鬼婆集會": {
+                                            "name": "鬼婆集會",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "儘管鬼婆們生性自私，但當她們必須共事時，她們會組成集會。一個集會可以由任何類型的鬼婆組成，且她們在集會中都有著平等的地位。然而，鬼婆們各自都渴望握有更多的個人權力。"
+                                        },
+                                        "鬼婆之眼(限定集會)": {
+                                            "name": "鬼婆之眼 (限定集會)",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [
+                                                "3d10"
+                                            ],
+                                            "description": "鬼婆集會可以製作一個被稱為「鬼婆之眼」的魔法物品。鬼婆之眼是由一顆覆蓋著清漆的眼珠製成，且通常被安置於吊墜或其他可穿戴的飾品上。鬼婆之眼通常會被託付給僕從以保管和運送。若鬼婆之眼與一個集會中的鬼婆位於相同的存在位面，則她可以採取一個動作以看見鬼婆之眼所看見的事物。鬼婆之眼具有AC 10和1點生命值，且具有60呎的黑暗視覺。若鬼婆之眼被摧毀，每個鬼婆集會的成員都將受到3d10精神傷害並陷入目盲狀態長達24小時。"
+                                        }
+                                    },
+                                    "order": [
+                                        "兩棲",
+                                        "擬聲",
+                                        "鬼婆集會",
+                                        "鬼婆之眼(限定集會)"
+                                    ]
+                                },
+                                "senses": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "Senses",
+                                    "attributes": {
+                                        "": {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "呎",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": []
+                                        }
+                                    },
+                                    "order": [
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "爪抓": {
+                                    "name": "爪抓",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "爪抓"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2d8 + 4 @"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 命中6，觸及5呎，單一目標。on hit: 13 (2d8 + 4)劈砍傷害。"
+                                },
+                                "幻象外貌": {
+                                    "name": "幻象外貌",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "幻象外貌"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "鬼婆用一層魔法幻象覆蓋她自己和任何她所穿戴或攜帶的事物，以使她看起來像是其他與她體型相近且擁有類人生物身形的生物。這個幻象會在鬼婆採取一個附贈動作將它終止，或她死亡時終止。"
+                                },
+                                "隱形通行": {
+                                    "name": "隱形通行",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "隱形通行"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "鬼婆用魔法使自己隱形，直到她攻擊、施放法術、或她的專注被打斷（如同專注於法術）。當處於隱形狀態時，她不會留下任何她通過的物理痕跡，因此只有魔法能夠追蹤她。任何她所穿戴或攜帶的裝備都會隨著她隱形。"
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 17
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 82
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 82
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": 30
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 18
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 12
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 16
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 13
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 14
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 14
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "initiativeMod": {
+                                    "value": "1"
+                                },
+                                "arcana": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "deception": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "perception": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "stealth": {
+                                    "value": [
+                                        true,
+                                        false
+                                    ]
+                                },
+                                "passivePerception": {
+                                    "value": 14
+                                },
+                                "level": {
+                                    "value": 3
+                                },
+                                "exp": {
+                                    "value": 700
+                                },
+                                "spellcastingAbility": {
+                                    "value": "cha"
+                                },
+                                "spellModifier": {
+                                    "value": 14
+                                }
+                            },
+                            "order": [
+                                "categories|class:綠鬼婆",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|basicInfo:initiative:initiativeMod",
+                                "overrides|skills:intSkills:arcana",
+                                "overrides|skills:chaSkills:deception",
+                                "overrides|skills:wisSkills:perception",
+                                "overrides|skills:dexSkills:stealth",
+                                "categories|class:senses",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "overrides|spellSlot:spellCasting:spellcastingAbility",
+                                "overrides|spellSlot:spellCasting:spellModifier",
+                                "attributes|weapons:weapons:爪抓",
+                                "attributes|weapons:weapons:幻象外貌",
+                                "attributes|weapons:weapons:隱形通行"
                             ],
                             "tags": []
                         }

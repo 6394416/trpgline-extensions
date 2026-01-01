@@ -1,0 +1,381 @@
+{
+    "version": 0,
+    "system": "dnd5",
+    "extends": {
+        "ids": [
+            "monster"
+        ],
+        "entities": {
+            "monster": {
+                "id": "怪物",
+                "name": "怪物",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "(獸化)熊人"
+                    ],
+                    "entities": {
+                        "(獸化)熊人": {
+                            "key": "(獸化)熊人",
+                            "name": "(獸化)熊人",
+                            "description": "",
+                            "categories": {
+                                "(獸化)熊人": {
+                                    "disabled": false,
+                                    "rollVariables": [],
+                                    "rolls": [],
+                                    "name": "(獸化)熊人",
+                                    "attributes": {
+                                        "變形者": {
+                                            "name": "變形者",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "熊人可以使用它的動作以變形成一個大型的半熊類人或一隻大型的熊，或變回它類人生物的真實型態。除了它的體型和AC之外，它在各個型態的數據保持不變。任何它所穿戴或攜帶的裝備並不會隨著變形發生轉變。它會在死亡時回復它的真實型態。"
+                                        },
+                                        "敏銳嗅覺": {
+                                            "name": "敏銳嗅覺",
+                                            "type": "text",
+                                            "value": " ",
+                                            "readonly": true,
+                                            "hasCustomName": false,
+                                            "removable": true,
+                                            "disableSeparator": false,
+                                            "rolls": [],
+                                            "description": "熊人在依賴嗅覺的睿知（感知）檢定中具有優勢。"
+                                        }
+                                    },
+                                    "order": [
+                                        "變形者",
+                                        "敏銳嗅覺"
+                                    ]
+                                }
+                            },
+                            "attributes": {
+                                "多重攻擊": {
+                                    "name": "多重攻擊",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "多重攻擊"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "在熊型態下，熊人進行二次爪抓攻擊。在類人型態下，它進行二次巨斧攻擊。在半熊人型態下，它可以像熊型態或類人型態一樣進行攻擊。"
+                                },
+                                "啃咬(限定熊或半熊人型態)": {
+                                    "name": "啃咬(限定熊或半熊人型態)",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "啃咬 (限定熊或半熊人型態)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2d10 + 4 @穿刺"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 命中7，觸及5呎，單一目標。on hit: 15 (2d10 + 4)穿刺傷害。若目標為一個類人生物，則它必須成功通過一次DC 14的體質豁免，否則將被熊人獸化症給詛咒。"
+                                },
+                                "爪抓(限定熊或半熊人型態)": {
+                                    "name": "爪抓(限定熊或半熊人型態)",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "爪抓 (限定熊或半熊人型態)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2d8 + 4 @劈砍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 命中7，觸及5呎，單一目標。on hit: 13 (2d8 + 4)劈砍傷害。"
+                                },
+                                "巨斧(限定類人或半熊人型態)": {
+                                    "name": "巨斧(限定類人或半熊人型態)",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "巨斧 (限定類人或半熊人型態)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "number",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1d12 + 4 @劈砍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": " "
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "$0$1$2+??1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": "??2"
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": true,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "mw 命中7，觸及5呎，單一目標。on hit: 10 (1d12 + 4)劈砍傷害。"
+                                }
+                            },
+                            "overrides": {
+                                "ac": {
+                                    "value": 10
+                                },
+                                "hp": {
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "value": 135
+                                        },
+                                        {
+                                            "name": "",
+                                            "value": 135
+                                        }
+                                    ]
+                                },
+                                "walk": {
+                                    "value": {
+                                        "number": 30,
+                                        "condition": " (熊或半熊人型態下則為40呎, 攀爬30呎)"
+                                    }
+                                },
+                                "str": {
+                                    "value": [
+                                        {
+                                            "name": "Strength",
+                                            "type": "number",
+                                            "value": 19
+                                        },
+                                        {
+                                            "name": "Strength Modifier",
+                                            "type": "read",
+                                            "value": "({property:str:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "dex": {
+                                    "value": [
+                                        {
+                                            "name": "Dexterity",
+                                            "type": "number",
+                                            "value": 10
+                                        },
+                                        {
+                                            "name": "Dexterity Modifier",
+                                            "type": "read",
+                                            "value": "({property:dex:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "con": {
+                                    "value": [
+                                        {
+                                            "name": "Constitution",
+                                            "type": "number",
+                                            "value": 17
+                                        },
+                                        {
+                                            "name": "Constitution Modifier",
+                                            "type": "read",
+                                            "value": "({property:con:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "int": {
+                                    "value": [
+                                        {
+                                            "name": "Intelligence",
+                                            "type": "number",
+                                            "value": 11
+                                        },
+                                        {
+                                            "name": "Intelligence Modifier",
+                                            "type": "read",
+                                            "value": "({property:int:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "wis": {
+                                    "value": [
+                                        {
+                                            "name": "Wisdom",
+                                            "type": "number",
+                                            "value": 12
+                                        },
+                                        {
+                                            "name": "Wisdom Modifier",
+                                            "type": "read",
+                                            "value": "({property:wis:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "cha": {
+                                    "value": [
+                                        {
+                                            "name": "Charisma",
+                                            "type": "number",
+                                            "value": 12
+                                        },
+                                        {
+                                            "name": "Charisma Modifier",
+                                            "type": "read",
+                                            "value": "({property:cha:0} - 10)/2"
+                                        }
+                                    ]
+                                },
+                                "initiativeMod": {
+                                    "value": "0"
+                                },
+                                "perception": {
+                                    "value": [
+                                        true,
+                                        true
+                                    ]
+                                },
+                                "passivePerception": {
+                                    "value": 17
+                                },
+                                "level": {
+                                    "value": 5
+                                },
+                                "exp": {
+                                    "value": 1800
+                                }
+                            },
+                            "order": [
+                                "categories|class:(獸化)熊人",
+                                "overrides|basicInfo:basicAttributes:ac",
+                                "overrides|basicInfo:basicAttributes:hp",
+                                "overrides|basicInfo:speed:walk",
+                                "overrides|basicInfo:property:str",
+                                "overrides|basicInfo:property:dex",
+                                "overrides|basicInfo:property:con",
+                                "overrides|basicInfo:property:int",
+                                "overrides|basicInfo:property:wis",
+                                "overrides|basicInfo:property:cha",
+                                "overrides|basicInfo:initiative:initiativeMod",
+                                "overrides|skills:wisSkills:perception",
+                                "overrides|basicInfo:basicAttributes:passivePerception",
+                                "overrides|basicInfo:basicInfo:level",
+                                "overrides|basicInfo:basicInfo:exp",
+                                "attributes|weapons:weapons:多重攻擊",
+                                "attributes|weapons:weapons:啃咬(限定熊或半熊人型態)",
+                                "attributes|weapons:weapons:爪抓(限定熊或半熊人型態)",
+                                "attributes|weapons:weapons:巨斧(限定類人或半熊人型態)"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
